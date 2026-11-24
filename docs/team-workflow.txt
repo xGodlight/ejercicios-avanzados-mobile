@@ -1,2 +1,2 @@
-Login policy: password sign-in only.
+Login policy: JWT sign-in with secure token storage.
 This line is intentionally shared by the simulated developers.
