@@ -1,2 +1,3 @@
-Login policy: JWT sign-in with secure token storage.
+Login policy: JWT sign-in with secure token storage and configurable organization SSO.
 This line is intentionally shared by the simulated developers.
+Main contribution: keep the identity provider configurable.
