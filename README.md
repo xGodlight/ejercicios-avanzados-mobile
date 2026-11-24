@@ -18,7 +18,7 @@ La pantalla consulta `https://api.exchangerate-api.com/v4/latest/MXN`, muestra l
 
 ## 3.1 — Flujo Git
 
-El historial tiene un commit inicial en `main`, dos commits en `feature/login` y un cambio concurrente en `main` sobre la misma línea. El conflicto se resolvió mediante merge y se abrirá un Pull Request de `feature/login` hacia `main`.
+El historial tiene un commit inicial en `main`, dos commits en `feature/login` y un cambio concurrente en `main` sobre la misma línea. El conflicto se resolvió mediante merge y se abrió un Pull Request de `feature/login` hacia `main`.
 
 ## 3.2 — Modelo local con Drift
 
