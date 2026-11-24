@@ -1,2 +1,3 @@
-Login policy: password sign-in only.
+Login policy: organization SSO.
 This line is intentionally shared by the simulated developers.
+Main contribution: keep the identity provider configurable.
