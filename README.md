@@ -18,7 +18,7 @@ La pantalla consulta `https://api.exchangerate-api.com/v4/latest/MXN`, muestra l
 
 ## 3.1 — Flujo Git
 
-El historial se prepara en `main` y `feature/login`: commit inicial, dos commits de la feature y un cambio concurrente en `main` sobre la misma línea. Se resuelve el conflicto mediante merge, se publica `feature/login` y se abre un Pull Request hacia `main`.
+El historial tiene un commit inicial en `main`, dos commits en `feature/login` y un cambio concurrente en `main` sobre la misma línea. El conflicto se resolvió mediante merge y se abrió un Pull Request de `feature/login` hacia `main`.
 
 ## 3.2 — Modelo local con Drift
 
@@ -37,6 +37,12 @@ El ejemplo ejecutable está en `lib/security/jwt_token_store.dart`. Guarda, recu
 ### Android nativo: EncryptedSharedPreferences (legado)
 
 `EncryptedSharedPreferences` pertenece a Jetpack Security Crypto y está deprecado para nuevas implementaciones. Se muestra por compatibilidad con el ejercicio; para una app nueva usa la configuración actual del plugin (o Android Keystore directamente).
+
+```kotlin
+dependencies {
+    implementation("androidx.security:security-crypto:1.1.0")
+}
+```
 
 ```kotlin
 val masterKey = MasterKey.Builder(context)
@@ -113,6 +119,8 @@ enum KeychainError: Error {
 }
 ```
 
+Referencias: [Android Security Crypto](https://developer.android.com/jetpack/androidx/releases/security) y [Apple Keychain Services](https://developer.apple.com/documentation/security/keychain-services).
+
 ## Ejercicio Git en GitHub
 
-El repositorio contiene el historial de commits con el conflicto simulado y el PR abierto desde `feature/login` a `main`.
+El repositorio contiene el historial de commits con el conflicto simulado y el PR desde `feature/login` a `main`.
