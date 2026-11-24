@@ -1,0 +1,2 @@
+Login policy: password sign-in only.
+This line is intentionally shared by the simulated developers.
